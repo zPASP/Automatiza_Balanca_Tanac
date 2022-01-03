@@ -1,0 +1,102 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             ******************************************************
+                             * SUP0168 - RELACAO DE PESAGENS EFETUADAS NO PERIODO *
+                             ******************************************************
+
+                                      EMITIDO PELO USUARIO lspaz EM 15/12/2021 AS 09:41:56 HRS.
+
+                                      PERIODO DE 13/12/2021 ATE 15/12/2021
+
+                                      TICKETS DE        ATE       
+
+                                      BALANCEIRO.....: daveleda DAILOR ARAUJO VELEDA          
+
+                                      TURNO..........:                                     
+
+                                      EMISSAO........: DETALHADO E RESUMO
+
+                                      TIPO DE NOTA...: TODOS
+
+                                      PLACAS.........: TODAS
+
+                                      FORNECEDOR.....: TODOS
+
+                                      FRETEIRO.......: TODOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+TANAC S.A. RIO GRANDE               
+SUP0168                                    RELACAO DE PESAGENS EFETUADAS DE 13/12/2021 A 15/12/2021                                                          FL.   2
+(D)=Destino    (T)=Tipo Contrato                                                                                             EXTRAIDO EM 15/12/2021 AS 09:41:56 HRS.
+
+FRETEIRO: DIVERSOS       
+                                                                                                                                       ---DIFERENCA---            
+ENTRADA          SAIDA            TICKET PLACA   NF.PRD   FORNECEDOR      FZ/CT. TRANSP ITEM                  QTD.NFP    QTD.C. PESO LIQ.   QUANT.  PCT(%) D T   PESO M.
+---------------- ---------------- ------ ------- -------- --------------- ------ ------ ------------------- --------- --------- --------- -------- ------- - - ---------
+01/12/2021 21:40 20/12/2021 00:16 607874 JAW9A42     6973 089387864003560  10314 090030 LENHA I AC.NEGRA        71,96     69,31    29,360    -2,65    3,68 E G     0,424
+02/12/2021 22:42 21/12/2021 00:47 607875 IIX7G30     6974 089387864003560  10314 010835 LENHA I AC.NEGRA        59,40     57,65    26,220    -1,75    2,95 E G     0,455
+03/12/2021 22:53 22/12/2021 01:33 607876 ITM8266     6975 089387864003560  10314 090030 LENHA I AC.NEGRA        70,26     70,14    33,340    -0,12    0,17 E G     0,475
+04/12/2021 23:24 23/12/2021 02:03 607877 RFC9E62     6976 089387864003560  10314 004910 LENHA I AC.NEGRA        75,37     76,53    32,550     1,16    1,54 E G     0,425
+05/12/2021 00:14 24/12/2021 02:52 607878 IRY0638     6977 089387864003560  10314 010835 LENHA I AC.NEGRA        63,22     62,88    25,450    -0,34    0,54 E G     0,405
+06/12/2021 00:26 25/12/2021 03:53 607879 OBJ9E01     6978 089387864003560  10314 010835 LENHA I AC.NEGRA        70,57     67,32    30,290    -3,25    4,61 E G     0,450
+07/12/2021 00:37 26/12/2021 04:16 607880 IMF0E06     6979 089387864003560  10314 010835 LENHA I AC.NEGRA        63,36     60,64    27,190    -2,72    4,29 E G     0,448
+                                                                                                 --------- --------- ---------                      ---------
+                                                    TOTAL GERAL: CAMINHOES:   205                            14492,04  13703,84  6286,220                          0,459
+
+         ITEM              DESCRICAO           TOTAL NFP/ITEM  TOTAL CALC/ITEM TOTAL PESO/ITEM
+         ----------------  ------------------  --------------  --------------  ---------------
+         151520.000        LENHA I AC.NEGRA          6.489,70        6.294,18         2756,510
+         151520.002        LENHA I  AC 3,30 m        2.850,53        2.732,72         1028,580
+         154530.000        EUCALIPTO DUNNII          1.001,00          817,80          441,520
+         155530.000        EUCALIPTO GRANDIS         1.384,81        1.337,95          602,980
+         156532.000        EUCALIPTO CLONE SA          448,00          431,57          193,670
+         157530.000        EUCALIPTO SPP             2.130,00        1.901,62         1074,960
+         170000.000        SERRAGEM PINUS              188,00          188,00          188,000
+
+
+
+
+
+
+
+* * * ULTIMA FOLHA * * *
+
