@@ -6,7 +6,7 @@ contadorDePalavras = 0
 dados = ""
 
 
-import date
+import validTimesTemp
 import csv
 
 with open("arq.lst") as file:
@@ -26,7 +26,7 @@ with open("arq.lst") as file:
             print(f'saiu')
         elif (contadorDeLinha > 1):
             for (indice ,access) in enumerate(line.split()):           
-                verifyDate = date.checkDate(access)
+                verifyDate = validTimesTemp.checkDate(access)
                 if ((verifyDate['data'] == False and indice > 5) or (verifyDate['data'] == False and indice == 0)):
                     break
                 if (indice == 0):
