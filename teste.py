@@ -1,7 +1,12 @@
-nome = "pedro"
-for indice, letra in enumerate(nome):
-    print (f'indice: {indice}| letra: {letra}')
+vetTeste = { 1 : { 'nome' : 'pedro'}}
 
-numero = "z"
+print (vetTeste)
 
-print(type(int(numero)))
+vetTeste[2] = {'nome' : 'arthur'}
+
+print (vetTeste)
+
+vetTeste[2] = {**vetTeste[2],'idade': 12}
+
+print(vetTeste)
+print(type(vetTeste))
