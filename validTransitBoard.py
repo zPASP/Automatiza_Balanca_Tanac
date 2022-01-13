@@ -11,6 +11,9 @@ CATALAGO DE ERROS:
 INICIO 2 - Referente ao ERRO de placa
 0001 - ERRO NO FORMATO DA PLACA.
 """
+from os import error
+
+
 def checkTransitBoard (board):
     '''
     Essa função checa a placa e verifica se o parametro recebido é uma placa valida ou não.
@@ -35,19 +38,21 @@ def checkTransitBoard (board):
                     break
             if (counterLetter == 4 and counterNumber == 3):
                 'Com base no contador, informa o padrão da placa como mercosul'
-                print ("Padrão Mercosul")
+                #print ("Padrão Mercosul")
                 verifyBoard = {
                     "Model" : "Mercosul",
                     "data" : board
                     }
             elif (counterLetter == 3 and counterNumber == 4):
                 'Com base no contador, informa o padrão da placa como brasil'
-                print ("Padrão Brasil")
+                #print ("Padrão Brasil")
                 verifyBoard = {
                     "Model" : "Brasil - Antigo",
                     "data" : board
                     }
             return verifyBoard
+        else:
+            raise ValueError('ERRO DADOS INVALIDOS')
     except:
         'Exeção para possivel erro no formato ou dados da placa.'
         verifyBoard = {
