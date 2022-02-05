@@ -65,40 +65,40 @@ def readyTruckInfo():
 
                     if (indice == 0):
                         'Valor data de entrada'
-                        criarDicionario({'info': 'd_e', 'data': access})
+                        generateDictionary({'info': 'd_e', 'data': access})
                         print(f'D_E: {access}')
                     if (indice == 1):
                         'valor hora de entrada'
-                        criarDicionario({'info': 'h_e', 'data': access})
+                        generateDictionary({'info': 'h_e', 'data': access})
                         print(f'H_E: {access}')
                     if (indice == 2):
-                        'valor sendo possivel ser hora de entrada caso em branco validar placa'
+                        'valor sendo possivel ser data de saida caso em branco validar placa'
                         print (access)
                         #print((validTransitBoard.checkTransitBoard(access))['data'])
                         if ((validTimesTemp.checkDate(access))['data'] != False):
-                            criarDicionario({'info': 'd_s', 'data': access})
+                            generateDictionary({'info': 'd_s', 'data': access})
                             print(f'D_S: {access}')
                         elif ((validTransitBoard.checkTransitBoard(access))['data'] != False):
-                            criarDicionario({'info': 'd_s', 'data': ""})
-                            criarDicionario({'info': 'h_s', 'data': ""})
-                            criarDicionario({'info': 'placa', 'data': access})
+                            generateDictionary({'info': 'd_s', 'data': ""})
+                            generateDictionary({'info': 'h_s', 'data': ""})
+                            generateDictionary({'info': 'placa', 'data': access})
                             print(f'PLACA: {line.split()[indice+1]}')
                             break
                         elif (((validTransitBoard.checkTransitBoard(access))['data'] == False)):
-                            criarDicionario({'info': 'h_s', 'data': ""})
-                            criarDicionario({'info': 'd_s', 'data': ""})
-                            criarDicionario({'info': 'placa', 'data': line.split()[indice+1]})
+                            generateDictionary({'info': 'h_s', 'data': ""})
+                            generateDictionary({'info': 'd_s', 'data': ""})
+                            generateDictionary({'info': 'placa', 'data': line.split()[indice+1]})
                             print(f'PLACA: {line.split()[indice+1]}')
                             break                            
                         else:
                             break
                     if (indice == 3):
                         'valor hora de saida'
-                        {'info': 'h_s', 'data': access}
+                        generateDictionary({'info': 'h_s', 'data': access})
                         print(f'H_S: {access}')
                     if (indice == 5):
                         'valor placa caminhão caso tenha entrada e saida registrada'
-                        criarDicionario({'info': 'placa', 'data': access})
+                        generateDictionary({'info': 'placa', 'data': access})
                         print(f'PLACA: {access}')
 
                 countLine = countLine + 1
@@ -106,7 +106,7 @@ def readyTruckInfo():
     # except:
     #     print("arquivo não encontrado")
 
-def criarDicionario (data):
+def generateDictionary (data):
     print ('entrou')
     if (data['info'] == 'd_e'):
         allInformationOfTruck[countDataOfThuck] = {'data_entrada': data['data']}
@@ -128,45 +128,7 @@ def sumDataOfTruck ():
     global countDataOfThuck
     countDataOfThuck += 1
 
-
-
-readyTruckInfo()
-print (allInformationOfTruck)
-
-
-
-dataEntrada = {'info': 'd_e', 'data': '01/01/1111'}
-horaEntrada = {'info': 'h_e', 'data': '01:01'}
-horaSaida = {'info': 'd_s', 'data': '02/02/2222'}
-dataSaida = {'info': 'h_s', 'data': '02:02'}
-placa = {'info': 'placa', 'data': 'ZZZ0A999'}
-
-# criarDicionario(dataEntrada)
-# criarDicionario(horaEntrada)
-# criarDicionario(dataSaida)
-# criarDicionario(horaSaida)
-# criarDicionario(placa)
-# criarDicionario(dataEntrada)
-# criarDicionario(horaEntrada)
-# criarDicionario(dataSaida)
-# criarDicionario(horaSaida)
-# criarDicionario(placa)
-
-# print (countDataOfThuck)
-# print (allInformationOfTruck)
-
-"""
-{
-        "data_entrada": "01/12/2021",
-        "hora_entrada": "21:40",
-        "data_saida": "01/12/2021",
-        "hora_saida": "23:00",
-        "placa": "AAA1B222"
-    }
-"""
-
-# ENTRADA: "12/12/2021"
-# HORA: "21:40"
-# SAIDA: "13/12/21"
-# SAIDA: "00:16"
-# PLACA: "JAW9A42"
+def getDictionaryOfTruck ():
+    readyTruckInfo()
+    global allInformationOfTruck
+    return allInformationOfTruck
